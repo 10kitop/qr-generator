@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de QR Code</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="qrForm">
+      <h2>Digite um texto para gerar o QR Code</h2>
+      <div class="form-group">
+        <label for="textInput">Texto:</label>
+        <input type="text" id="textInput" name="textInput" required>
+      </div>
+      <button type="submit">Gerar QR</button>
+    </form>
+  </div>
+
+  <div class="popup-container" id="popup-container">
+    <div class="popup-content">
+        <div id="qrcode"></div>
+        <button id="download-qr">Baixar QR Code</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
