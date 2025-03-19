@@ -26,6 +26,7 @@ document.getElementById('qrForm').addEventListener('submit', function(e) {
     document.getElementById('popup-container').style.display = 'flex';
 });
 
+// Botão para baixar QR Code
 document.getElementById('download-qr').addEventListener('click', function() {
     const qrCanvas = document.getElementById('qrcode').querySelector('canvas');
     
@@ -42,4 +43,9 @@ document.getElementById('download-qr').addEventListener('click', function() {
     link.click();
     document.body.removeChild(link);
 });
-s
+
+// Botão para gerar outro QR Code
+document.getElementById('generate-new').addEventListener('click', function() {
+    document.getElementById('popup-container').style.display = 'none';
+    document.getElementById('textInput').value = ''; // Limpa o campo de entrada
+});
