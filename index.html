@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -9,19 +8,22 @@
 <body>
   <div class="container">
     <form id="qrForm">
-      <h2>Digite um texto para gerar o QR Code</h2>
+      <h2>Gere seu QR Code</h2>
       <div class="form-group">
-        <label for="textInput">Texto:</label>
+        <label for="textInput">Link ou texto:</label>
         <input type="text" id="textInput" name="textInput" required>
       </div>
-      <button type="submit">Gerar QR</button>
+      <button class="blue-button" type="submit">Gerar QR</button>
     </form>
   </div>
 
   <div class="popup-container" id="popup-container">
     <div class="popup-content">
         <div id="qrcode"></div>
-        <button id="download-qr">Baixar QR Code</button>
+        <div class="button-group">
+          <button id="download-qr" class="green-button">Baixar QR Code</button>
+          <button id="generate-new" class="blue-button">Gerar Outro</button>
+        </div>
     </div>
   </div>
 
